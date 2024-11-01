@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Ferramentas - Portal Pessoal{% endblock %}
+
+{% block content %}
+<h2>Ferramentas</h2>
+<p>Abaixo estão listadas as ferramentas disponíveis neste portal. Selecione uma ferramenta no menu lateral para acessar sua funcionalidade.</p>
+
+<div class="tools-container">
+    <!-- Menu lateral com as ferramentas -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="/ferramentas/mesclar_pdfs">Mesclar PDFs</a></li>
+            <li><a href="/ferramentas/pdf_para_imagem">Converter PDF para Imagem</a></li>
+            <li><a href="/ferramentas/calc_area">Calculadora de Área</a></li>
+        </ul>
+    </div>
+
+    <!-- Área de conteúdo da ferramenta selecionada -->
+    <div class="tool-content">
+        {% if selected_tool == "mesclar_pdfs" %}
+        {% include "tools/mesclar_pdfs.html" %}
+        {% elif selected_tool == "pdf_para_imagem" %}
+        {% include "tools/pdf_para_imagem.html" %}
+        {% else %}
+        <p>Selecione uma ferramenta no menu ao lado para exibir seu conteúdo aqui.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

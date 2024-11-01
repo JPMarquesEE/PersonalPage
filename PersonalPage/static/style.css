@@ -1,0 +1,124 @@
+/* ==========================
+   Reset de Estilo
+   ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========================
+   Estilo Geral do Corpo
+   ========================== */
+body {
+    background-color: #f4f4f9;
+}
+
+/* ==========================
+   Estrutura Principal do Contêiner
+   ========================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* ==========================
+   Cabeçalho e Menu Superior
+   ========================== */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+.menu-item {
+    font-weight: bold;
+}
+
+    .menu-item a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .menu-item a:hover {
+            text-decoration: underline;
+        }
+
+/* ==========================
+   Layout de Ferramentas
+   ========================== */
+.tools-container {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+            .sidebar ul li a {
+                text-decoration: none;
+                color: #007bff;
+                font-weight: bold;
+            }
+
+                .sidebar ul li a:hover {
+                    color: #0056b3;
+                }
+
+.tool-content {
+    width: 75%;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* ==========================
+   Estilo para o Campo de Entrada de Texto
+   ========================== */
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    resize: none; /* Impede o redimensionamento manual */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ajuste para preencher a largura do contêiner */
+}
+
+    /* Estilo ao focar no campo de texto */
+    textarea:focus {
+        border-color: #007bff; /* Cor de destaque na borda ao focar */
+        outline: none;
+    }
+
+/* ==========================
+   Estilo de Botões
+   ========================== */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
